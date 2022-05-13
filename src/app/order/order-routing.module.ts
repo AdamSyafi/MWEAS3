@@ -8,13 +8,10 @@ const routes: Routes = [
     path: '',
     component: OrderPage
   },  {
-    path: 'manage-order',
-    loadChildren: () => import('./manage-order/manage-order.module').then( m => m.ManageOrderPageModule)
+    path: 'manage',
+    loadChildren: () => import('./manage/manage.module').then( m => m.ManagePageModule)
   },
-  {
-    path: 'payment-method',
-    loadChildren: () => import('./payment-method/payment-method.module').then( m => m.PaymentMethodPageModule)
-  }
+
 
 ];
 
