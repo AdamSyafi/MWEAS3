@@ -6,4 +6,31 @@
 
 <ion-content>
 
+  <ion-grid>
+    <p>Enter the following</p>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item A" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item B" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item C" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-button [routerLink]="['./payment']">Next</ion-button>
+  </ion-grid>
+
 </ion-content>
