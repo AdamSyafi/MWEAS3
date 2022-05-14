@@ -1,9 +1,71 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>about-us</ion-title>
+    <ion-title>About Us</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content fullscreen>
+  <ion-card>
+    <ion-card-content class="ion-padding ion-text-center">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Logo WeDeli">
+      </div>
+    </ion-card-content>
+    <ion-card-content>
+      WeDeli is an all-in-one application platform for those who wish to provide their services as runner as well as customers who require them.
+      It enables people to supplement their income by working as runners.
+      Furthermore, making the process of hiring a runner for consumer easier.
+    </ion-card-content>
+    <ion-card-content class="ion-padding ion-text-center">
+      <h1>Developers</h1>
+      <ion-grid>
+        
+      </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h2>Rohzeime</h2>
+          </ion-col>
+          <ion-col>
+            <h2>Adam</h2>
+          </ion-col>
+          <ion-col>
+            <h2>Matt</h2>
+          </ion-col>
+          <ion-col>
+            <h2>Fikri</h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="Home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="order">
+        <ion-icon name="clipboard-outline"></ion-icon>
+        <ion-label>Order</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+      
+      <ion-tab-button tab="setting">
+        <ion-icon name="settings-outline"></ion-icon>
+        <ion-label>Settings</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="about">
+        <ion-icon name="information-circle-outline"></ion-icon>
+        <ion-label>About Us</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
