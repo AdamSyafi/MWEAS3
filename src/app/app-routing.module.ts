@@ -54,20 +54,20 @@ const routes: Routes = [
   {
     path: 'runner',
     loadChildren: () => import('./runner/runner.module').then( m => m.RunnerPageModule)
-  },
-  /*{
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
-  },
-  {
-    path: 'apple',
-    loadChildren: () => import('./auth/apple/apple.module').then( m => m.ApplePageModule)
-  },
-  {
-    path: 'google',
-    loadChildren: () => import('./auth/google/google.module').then( m => m.GooglePageModule)
   }
-*/
+  // {
+  //   path: 'auth',
+  //   loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
+  // }
+  // {
+  //   path: 'apple',
+  //   loadChildren: () => import('./auth/apple/apple.module').then( m => m.ApplePageModule)
+  // },
+  // {
+  //   path: 'google',
+  //   loadChildren: () => import('./auth/google/google.module').then( m => m.GooglePageModule)
+  // }
+
 ];
 
 @NgModule({
