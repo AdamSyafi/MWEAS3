@@ -1,14 +1,15 @@
+/* eslint-disable eol-last */
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AuthPage } from './auth.page';
+/*import { AuthPage } from './auth.page';
 
-const routes: Routes = [
+ /*{const routes: Routes = [
   {
     path: '',
     component: AuthPage
   },
-  {
+
     path: 'apple',
     loadChildren: () => import('./apple/apple.module').then( m => m.ApplePageModule)
   },
@@ -23,3 +24,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AuthPageRoutingModule {}
+*/

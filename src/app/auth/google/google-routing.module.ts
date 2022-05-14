@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+/* eslint-disable eol-last */
+/*import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { GooglePage } from './google.page';
@@ -15,3 +16,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class GooglePageRoutingModule {}
+*/

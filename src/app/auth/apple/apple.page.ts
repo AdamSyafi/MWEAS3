@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+/*import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { IonicAuthService } from 'src/app/ionic-auth.service';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
@@ -10,30 +10,30 @@ import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms'
 })
 export class ApplePage implements OnInit {
 
-  userForm: FormGroup;
-  successMsg: string = '';
-  errorMsg: string = '';
-  
+ /* userForm: FormGroup;
+ // successMsg: string = '';
+// errorMsg: string = '';
+
 
   error_msg = {
     'email': [
-      { 
-        type: 'required', 
-        message: 'Provide email.' 
+      {
+        type: 'required',
+        message: 'Provide email.'
       },
-      { 
-        type: 'pattern', 
-        message: 'Email is not valid.' 
+      {
+        type: 'pattern',
+        message: 'Email is not valid.'
       }
     ],
     'password': [
-      { 
-        type: 'required', 
-        message: 'Password is required.' 
+      {
+        type: 'required',
+        message: 'Password is required.'
       },
-      { 
-        type: 'minlength', 
-        message: 'Password length should be 6 characters long.' 
+      {
+        type: 'minlength',
+        message: 'Password length should be 6 characters long.'
       }
     ]
   };
@@ -73,4 +73,4 @@ export class ApplePage implements OnInit {
     this.router.navigateByUrl('register');
   }
 
-}
+} */

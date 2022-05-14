@@ -1,4 +1,5 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+/* eslint-disable eol-last */
+/*import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { ApplePage } from './apple.page';
@@ -22,3 +23,4 @@ describe('ApplePage', () => {
     expect(component).toBeTruthy();
   });
 });
+*/

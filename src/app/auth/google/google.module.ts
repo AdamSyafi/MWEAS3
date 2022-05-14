@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+/* eslint-disable eol-last */
+/*import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -19,3 +20,4 @@ import { GooglePage } from './google.page';
   declarations: [GooglePage]
 })
 export class GooglePageModule {}
+*/

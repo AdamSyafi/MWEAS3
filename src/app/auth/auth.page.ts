@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+/* eslint-disable eol-last */
+/*import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-auth',
@@ -13,3 +14,4 @@ export class AuthPage implements OnInit {
   }
 
 }
+*/

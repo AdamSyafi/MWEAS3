@@ -55,11 +55,11 @@ const routes: Routes = [
     path: 'runner',
     loadChildren: () => import('./runner/runner.module').then( m => m.RunnerPageModule)
   },
-  {
+  /*{
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
   }
-
+*/
 ];
 
 @NgModule({

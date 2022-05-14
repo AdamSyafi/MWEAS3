@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+/*import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -19,3 +19,4 @@ import { ApplePage } from './apple.page';
   declarations: [ApplePage]
 })
 export class ApplePageModule {}
+*/
