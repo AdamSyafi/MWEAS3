@@ -47,7 +47,14 @@ const routes: Routes = [
     path: 'aboutus',
     loadChildren: () => import('./aboutus/aboutus.module').then( m => m.AboutusPageModule)
   },
-
+  {
+    path: 'user',
+    loadChildren: () => import('./Home/user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'runner',
+    loadChildren: () => import('./Home/runner/runner.module').then( m => m.RunnerPageModule)
+  },
 
 ];
 
