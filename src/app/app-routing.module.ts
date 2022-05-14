@@ -29,7 +29,15 @@ const routes: Routes = [
   },
   {
     path: 'about-us',
-    loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
+    loadChildren: () => import('./aboutus/aboutus.module').then( m => m.AboutusPageModule)
+  },
+  {
+    path: 'settings',
+    loadChildren: () => import('./settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'aboutus',
+    loadChildren: () => import('./aboutus/aboutus.module').then( m => m.AboutusPageModule)
   },
 ];
 

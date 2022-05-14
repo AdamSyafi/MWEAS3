@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
+import { PopoverController } from '@ionic/angular';
 import { IonicAuthService } from '../ionic-auth.service';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'app-Home',
   templateUrl: './Home.page.html',
   styleUrls: ['./Home.page.scss'],
@@ -13,7 +15,8 @@ export class DashboardPage implements OnInit {
 
   constructor(
     private router: Router,
-    private ionicAuthService: IonicAuthService
+    private ionicAuthService: IonicAuthService,
+    private popCtrl: PopoverController
   ) { }
 
   ngOnInit() {
@@ -25,7 +28,7 @@ export class DashboardPage implements OnInit {
       }
     }, error => {
       console.log(error);
-    })
+    });
   }
 
   signOut() {
@@ -35,6 +38,6 @@ export class DashboardPage implements OnInit {
       })
       .catch(error => {
         console.log(error);
-      })
+      });
   }
 }
