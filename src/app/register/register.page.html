@@ -1,10 +1,24 @@
 <ion-header>
   <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/auth"></ion-back-button>
+    </ion-buttons>
     <ion-title>User Registeration</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <div>
+          <h2>Join WeDeli now.</h2>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
   <form class="form" [formGroup]="userForm" (ngSubmit)="signUp(userForm.value)">
     <ion-item>
       <ion-label position="floating">Email</ion-label>
@@ -28,39 +42,11 @@
         </div>
     </ng-container>
 
-    <ion-button type="submit" expand="block" [disabled]="!userForm.valid">Register</ion-button>
+    <ion-button type="submit" expand="block" shape="round" [disabled]="!userForm.valid" color="warning">Register as Runner</ion-button>
+    <ion-button type="submit" expand="block" shape="round" [disabled]="!userForm.valid" color="danger">Register as User</ion-button>
     
     <label class="ion-text-center" color="danger">{{errorMsg}}</label>
     <label class="ion-text-center" color="success">{{successMsg}}</label>
   </form>
   <p class="ion-text-center">Already registered? <a (click)="goToLogin()">Login</a></p>
 </ion-content>
-
-<ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="Home">
-      <ion-icon name="home-outline"></ion-icon>
-      <ion-label>Home</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="order">
-      <ion-icon name="clipboard-outline"></ion-icon>
-      <ion-label>Order</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="profile">
-      <ion-icon name="person-circle-outline"></ion-icon>
-      <ion-label>Profile</ion-label>
-    </ion-tab-button>
-    
-    <ion-tab-button tab="setting">
-      <ion-icon name="settings-outline"></ion-icon>
-      <ion-label>Settings</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button tab="about">
-      <ion-icon name="information-circle-outline"></ion-icon>
-      <ion-label>About Us</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>

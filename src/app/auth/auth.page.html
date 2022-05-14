@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-title>auth</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3">
+          <div class="center">
+            <img src="assets/logo.png">
+          </div>
+          <div>
+            <h2>"The best food ordering and runner for mobile application in Brunei right now".</h2>
+            <h2>-Anon</h2>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3">
+          <ion-button [routerLink]="['/auth/apple']" expand="block" shape="round" color="dark">
+            <img src="assets/apple.jpeg" class="image"><p class="idk">Sign in with Apple</p>
+          </ion-button>
+          <ion-button [routerLink]="['/auth/google']" expand="block" shape="round" color="light" border="solid 1px">
+            <img src="assets/google.png" class="image">
+            <p class="idk">Sign in with Google</p>
+          </ion-button>
+          <p>or</p>
+          <ion-button [routerLink]="['/login']" expand="block" shape="round" color="warning">
+           Sign in
+          </ion-button>
+          <ion-button [routerLink]="['/register']" expand="block" shape="round" color="danger">
+            Create account
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+</ion-content>
