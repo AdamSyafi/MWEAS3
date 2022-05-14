@@ -1,24 +1,10 @@
 <ion-header>
   <ion-toolbar color="danger">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/auth"></ion-back-button>
-    </ion-buttons>
     <ion-title>User Registeration</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  
-  <ion-grid>
-    <ion-row>
-      <ion-col size-md="6" offset-md="3">
-        <div>
-          <h2>Join WeDeli now.</h2>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
   <form class="form" [formGroup]="userForm" (ngSubmit)="signUp(userForm.value)">
     <ion-item>
       <ion-label position="floating">Email</ion-label>
@@ -42,8 +28,7 @@
         </div>
     </ng-container>
 
-    <ion-button type="submit" expand="block" shape="round" [disabled]="!userForm.valid" color="warning">Register as Runner</ion-button>
-    <ion-button type="submit" expand="block" shape="round" [disabled]="!userForm.valid" color="danger">Register as User</ion-button>
+    <ion-button type="submit" expand="block" [disabled]="!userForm.valid">Register</ion-button>
     
     <label class="ion-text-center" color="danger">{{errorMsg}}</label>
     <label class="ion-text-center" color="success">{{successMsg}}</label>

@@ -7,12 +7,7 @@ const routes: Routes = [
   {
     path: '',
     component: OrderPage
-  },  {
-    path: 'manage',
-    loadChildren: () => import('./manage/manage.module').then( m => m.ManagePageModule)
-  },
-
-
+  }
 ];
 
 @NgModule({

@@ -1,8 +1,5 @@
 <ion-header>
-  <ion-toolbar color="warning">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="/auth"></ion-back-button>
-    </ion-buttons>
+  <ion-toolbar color="success">
     <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -31,7 +28,7 @@
         </div>
     </ng-container>
 
-    <ion-button type="submit" expand="block" shape="round" [disabled]="!userForm.valid" color="warning">Signin</ion-button>
+    <ion-button type="submit" expand="block" [disabled]="!userForm.valid">Signin</ion-button>
     
     <label class="ion-text-center" color="danger">{{errorMsg}}</label>
   </form>
