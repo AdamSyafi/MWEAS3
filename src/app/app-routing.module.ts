@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'register',
+    redirectTo: 'auth',
     pathMatch: 'full'
   },
   {
@@ -58,6 +58,14 @@ const routes: Routes = [
   /*{
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
+  },
+  {
+    path: 'apple',
+    loadChildren: () => import('./auth/apple/apple.module').then( m => m.ApplePageModule)
+  },
+  {
+    path: 'google',
+    loadChildren: () => import('./auth/google/google.module').then( m => m.GooglePageModule)
   }
 */
 ];
