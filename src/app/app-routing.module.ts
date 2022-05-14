@@ -24,6 +24,14 @@ const routes: Routes = [
     loadChildren: () => import('./order/order.module').then( m => m.OrderPageModule)
   },
   {
+    path: 'manage',
+    loadChildren: () => import('./order/manage/manage.module').then( m => m.ManagePageModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./order/manage/payment/payment.module').then( m => m.PaymentPageModule)
+  },
+  {
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
@@ -39,6 +47,8 @@ const routes: Routes = [
     path: 'aboutus',
     loadChildren: () => import('./aboutus/aboutus.module').then( m => m.AboutusPageModule)
   },
+
+
 ];
 
 @NgModule({

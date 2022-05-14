@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>manage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <p>Enter the following</p>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item A" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item B" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item C" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item D" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item E" color="primary"></ion-input>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-input placeholder="Item F" color="primary"></ion-input>
+  </ion-grid>
+
+
+
+  <ion-grid>
+    <ion-button [routerLink]="['./payment']">Next</ion-button>
+  </ion-grid>
+
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="Home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="order">
+      <ion-icon name="clipboard-outline"></ion-icon>
+      <ion-label>Order</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+    
+    <ion-tab-button tab="setting">
+      <ion-icon name="settings-outline"></ion-icon>
+      <ion-label>Settings</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="about">
+      <ion-icon name="information-circle-outline"></ion-icon>
+      <ion-label>About Us</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

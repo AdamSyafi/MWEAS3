@@ -1,10 +1,36 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>profile</ion-title>
+    <ion-title>payment</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-grid>
+    <p>Payment Method</p>
+  </ion-grid>
+
+  <ion-radio-group>
+
+    <ion-item>
+      <ion-label>Cash on delivery</ion-label>
+      <ion-radio slot="start" value="cash"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Online banking</ion-label>
+      <ion-radio slot="start" value="online"></ion-radio>
+
+
+    </ion-item>
+
+    <ion-grid>
+      <p>Insert Images</p>
+      <p>Upload the screenshot</p>
+    </ion-grid>
+
+
+  </ion-radio-group>
 
 </ion-content>
 
@@ -36,4 +62,3 @@
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
-
