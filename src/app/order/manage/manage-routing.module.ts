@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutUsPage } from './about-us.page';
+import { ManagePage } from './manage.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: AboutUsPage
+    component: ManagePage
   },
-  
+  {
+    path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AboutUsPageRoutingModule {}
+export class ManagePageRoutingModule {}
